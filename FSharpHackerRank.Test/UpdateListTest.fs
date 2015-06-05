@@ -4,9 +4,5 @@ open NUnit.Framework
 open FsUnit
 
 [<Test>]
-let ``should empty list return empty list``() =
-    UpdateList.updateList [] |> should equal []
-
-[<Test>]
-let ``should work correctly``() =
-    UpdateList.updateList [1;1;-10;4;2;1;-56] |> should equal [1;1;10;4;2;1;56]
+let ``should raise 20 work crrectly``() =
+    EvaluatingEAtX.raise 20.0 |> should equal 2423600.1887125224
