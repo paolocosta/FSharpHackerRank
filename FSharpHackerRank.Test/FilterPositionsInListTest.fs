@@ -1,4 +1,4 @@
-﻿module Test
+﻿module FilterPositionsInListTest
 
 open NUnit.Framework
 open FsUnit

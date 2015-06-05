@@ -50,6 +50,7 @@
   <ItemGroup>
     <Compile Include="Utils.fs" />
     <Compile Include="FilterPositionsInList.fs" />
+    <Compile Include="CreateNElementsArray.fs" />
     <Compile Include="Program.fs" />
     <None Include="App.config" />
   </ItemGroup>

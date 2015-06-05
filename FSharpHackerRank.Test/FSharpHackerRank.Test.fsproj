@@ -69,6 +69,7 @@
     <Compile Include="FilterPositionsInListTest.fs" />
     <None Include="packages.config" />
     <None Include="app.config" />
+    <Compile Include="CreateNElementsArrayTest.fs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\FSharpHackerRank\FSharpHackerRank.fsproj">
