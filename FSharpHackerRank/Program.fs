@@ -3,7 +3,9 @@
 
 [<EntryPoint>]
 let main argv =
-    FilterPositionsInList.FilterPositionsInList  // return an integer exit code
+
+    Utils.procinput []
+    |> FilterPositionsInList.FilterPositionsInList
     |> List.iter (printfn "%d")
 
     ignore(System.Console.ReadLine())

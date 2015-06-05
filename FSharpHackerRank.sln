@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FSharpHackerRank", "FilterPositionsInList\FSharpHackerRank.fsproj", "{6F1A5677-2DB4-4614-81AF-55FB28FCCC85}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FSharpHackerRank", "FSharpHackerRank\FSharpHackerRank.fsproj", "{6F1A5677-2DB4-4614-81AF-55FB28FCCC85}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
