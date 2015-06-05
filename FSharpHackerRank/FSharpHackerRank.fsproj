@@ -51,9 +51,9 @@
     <Compile Include="Utils.fs" />
     <Compile Include="FilterPositionsInList.fs" />
     <Compile Include="CreateNElementsArray.fs" />
-    <Compile Include="SumOfOddElementsTest.fs" />
+    <Compile Include="SumOfOddElements.fs" />
     <Compile Include="ListLength.fs" />
-    <Compile Include="Program.fs" />
+    <Compile Include="UpdateList.fs" />
     <None Include="App.config" />
   </ItemGroup>
   <PropertyGroup>

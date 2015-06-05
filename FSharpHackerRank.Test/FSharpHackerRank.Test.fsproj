@@ -72,6 +72,7 @@
     <Compile Include="CreateNElementsArrayTest.fs" />
     <Compile Include="SumOfOddElementsTest.fs" />
     <Compile Include="ListLengthTest.fs" />
+    <Compile Include="UpdateListTest.fs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\FSharpHackerRank\FSharpHackerRank.fsproj">
