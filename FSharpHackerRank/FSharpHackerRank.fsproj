@@ -57,6 +57,7 @@
     <None Include="App.config" />
     <Compile Include="EvaluatingEAtX.fs" />
     <Compile Include="AreaUnderCurvesAndVolumeOfRevolvingACurve.fs" />
+    <Compile Include="ComputingTheGDC.fs" />
   </ItemGroup>
   <PropertyGroup>
     <MinimumVisualStudioVersion Condition="'$(MinimumVisualStudioVersion)' == ''">11</MinimumVisualStudioVersion>
