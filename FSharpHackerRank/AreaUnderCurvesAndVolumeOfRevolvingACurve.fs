@@ -27,7 +27,7 @@ let GetArea multipliers exponents L R precision =
 
 let GetVolume multipliers exponents L R precision =
     fineList L R precision
-    |> List.fold (fun acc elem -> acc + System.Math.PI * System.Math.Abs((GetPolinomValue multipliers exponents elem) ** 2.0 / (10.0 ** float precision) )) 0.0
+    |> List.fold (fun acc elem -> acc + System.Math.PI * ((GetPolinomValue multipliers exponents elem) ** 2.0 / (10.0 ** float precision) )) 0.0
 
 let main i1 i2 i3 =
     let multipliers = extractList(i1)
