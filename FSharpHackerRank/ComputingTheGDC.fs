@@ -2,7 +2,7 @@
 
 let extractList (s:string) =
     s.Split(' ')
-    |>  Array.toList
+    |> Array.toList
     |> List.map System.Int32.Parse
 
 let rec GDC (X:int) (Y:int) : int =
@@ -10,7 +10,9 @@ let rec GDC (X:int) (Y:int) : int =
     else if X > Y then (GDC (X - Y) Y)
     else (GDC (Y - X) X)
 
-let main i1  =
+[<EntryPoint>]
+let main args  =
+    let i1 = System.Console.ReadLine()
     let values = extractList(i1)
-
-    GDC (List.nth values 0) (List.nth values 1)   
+    printfn "%d" (GDC (List.nth values 0) (List.nth values 1))
+    0
