@@ -6,7 +6,9 @@ let extractList (s:string) =
     |> List.map System.Int32.Parse
     |> List.map float
 
-let tenRaised exponent = 10.0 ** float exponent
+let tenRaisedTo exponent = 10.0 ** float exponent
+
+let circleArea R = System.Math.PI * (R ** 2.0)
 
 let GetPolinomValue multipliers exponents x =
     let calc mult exp =
@@ -19,7 +21,7 @@ let GetPolinomValue multipliers exponents x =
             acc +
                 calc (float(List.nth multipliers elem)) (float(List.nth exponents elem))) 0.0
 
-let fineList L R grane = [ for i in L * (tenRaised grane) + ( 1.0 / (tenRaised grane)) .. R * (tenRaised grane)  -> i / (tenRaised grane)]
+let fineList L R grane = [ for i in L * (tenRaisedTo grane) + ( 1.0 / (tenRaisedTo grane)) .. R * (tenRaisedTo grane)  -> i / (tenRaisedTo grane)]
 
 let GetArea multipliers exponents L R precision =
     fineList L R precision
@@ -27,7 +29,7 @@ let GetArea multipliers exponents L R precision =
 
 let GetVolume multipliers exponents L R precision =
     fineList L R precision
-    |> List.fold (fun acc elem -> acc + System.Math.PI * ((GetPolinomValue multipliers exponents elem) ** 2.0 / (10.0 ** float precision) )) 0.0
+    |> List.fold (fun acc elem -> acc + (circleArea(GetPolinomValue multipliers exponents elem)/ (10.0 ** float precision) )) 0.0
 
 let main i1 i2 i3 =
     let multipliers = extractList(i1)
