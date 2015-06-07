@@ -74,6 +74,7 @@
     <Compile Include="ListLengthTest.fs" />
     <Compile Include="UpdateListTest.fs" />
     <Compile Include="EvaluatingEAtXTest.fs" />
+    <Compile Include="AreaUnderCurvesAndVolumeOfRevolvingACurveTest.fs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\FSharpHackerRank\FSharpHackerRank.fsproj">
