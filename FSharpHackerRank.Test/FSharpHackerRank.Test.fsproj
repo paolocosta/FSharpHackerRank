@@ -76,6 +76,7 @@
     <Compile Include="EvaluatingEAtXTest.fs" />
     <Compile Include="AreaUnderCurvesAndVolumeOfRevolvingACurveTest.fs" />
     <Compile Include="ComputingTheGDCTest.fs" />
+    <Compile Include="PascalTriangleTest.fs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\FSharpHackerRank\FSharpHackerRank.fsproj">

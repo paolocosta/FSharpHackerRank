@@ -58,6 +58,7 @@
     <Compile Include="EvaluatingEAtX.fs" />
     <Compile Include="AreaUnderCurvesAndVolumeOfRevolvingACurve.fs" />
     <Compile Include="ComputingTheGDC.fs" />
+    <Compile Include="PascalTriangle.fs" />
   </ItemGroup>
   <PropertyGroup>
     <MinimumVisualStudioVersion Condition="'$(MinimumVisualStudioVersion)' == ''">11</MinimumVisualStudioVersion>
